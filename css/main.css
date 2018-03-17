@@ -692,8 +692,9 @@ h1{
 }
 
 .projects-card{
-    width: 27.4375em;
-    border: 0.0625em solid #C1C8E4;
+    width: 25.4375em;
+    border: 0.225em solid #C1C8E4;
+    border-radius: 0.5em;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: 1em;
@@ -989,6 +990,23 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.sky-blue-border-thick{
+    border: 0.425em solid #5AB9EA;
+}
+
+.light-pink-border-thick{
+    border: 0.425em solid #FF8DFF;
+}
+
+.really-blue-border-thick{
+    border: 0.425em solid #5680E9;
+}
+
+.straight-purple-border-thick{
+    border: 0.425em solid #8860D0;
+}
+
 
 /*----------Format----------*/
 .pin{

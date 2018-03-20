@@ -31,20 +31,20 @@ body{
 }
 
 a{
-    text-decoration: none !important;
+    text-decoration: none;
     /* color: #fff; */
 }
 
 a:hover{
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 a:active{
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 a:visited{
-    text-decoration: none !important;
+    text-decoration: none;
     color: #fff;
 }
 
@@ -809,8 +809,6 @@ h1{
     right: 0; */
     color: #fff;
 }
-
-.pg-btn
 
 .pg-btn p{
     margin: 0em;

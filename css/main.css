@@ -31,20 +31,20 @@ body{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     /* color: #fff; */
 }
 
 a:hover{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:active{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:visited{
-    text-decoration: none;
+    text-decoration: none !important;
     color: #fff;
 }
 
@@ -793,7 +793,7 @@ h1{
 
 .pg-btn:hover{
     border-radius: 2em;
-    transform: translate(1em);
+    /* transform: translate(1em); */
 }
 
 .pg-btn a{

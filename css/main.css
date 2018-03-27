@@ -1562,9 +1562,9 @@ b{
             }
         }
 
-@media (max-width: 320px){
+@media (max-width: 400px){
     .projects-card{
-        width: 275px;
+        width: 320px;
             }
         }
 

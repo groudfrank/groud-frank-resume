@@ -1526,15 +1526,15 @@ b{
 
 @media (max-width: 500px){
     .mobile-ready-img{
-        width: 20em;
-        height: 20em;
+        width: 19em;
+        height: 19em;
             }
         }
 
 @media (max-width: 320px){
     .mobile-ready-img{
-        width: 19em;
-        height: 19em;
+        width: 18em;
+        height: 18em;
             }
         }
 

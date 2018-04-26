@@ -784,7 +784,7 @@ h1{
     width: 10em;
     height: 3em;
     background: linear-gradient(220deg, #5AB9EA, #8860D0);
-    border-radius: 0.5em;
+    border-radius: 2em;
     margin-top: 5em;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -793,7 +793,7 @@ h1{
 
 
 .pg-btn:hover{
-    border-radius: 2em;
+    border-radius: 0.5em;
     /* transform: translate(1em); */
 }
 

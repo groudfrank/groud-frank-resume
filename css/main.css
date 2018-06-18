@@ -693,8 +693,8 @@ h1{
 
 .projects-card{
     width: 25.4375em;
-    border: 0.225em solid #C1C8E4;
-    border-radius: 0.5em;
+    border: 0.0625em solid #C1C8E4;
+    border-radius: 0.2em;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: 1em;
@@ -1187,6 +1187,16 @@ b{
             }
         }
 
+@media only screen and 
+(min-device-width: 200px) 
+and (max-device-width: 1300px) 
+and (orientation: landscape) {
+    :root{
+        font-size: 17px;
+    }
+
+}
+
 @media (max-width: 800px){
 :root {
     font-size: 20px;
@@ -1318,7 +1328,8 @@ b{
 
 @media (max-width: 1100px){
     .about-card-container {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
             }
         }
 
@@ -1327,7 +1338,17 @@ b{
         margin-bottom: 2em;
         margin-left: 0em;
             }
-        } 
+        }
+
+@media only screen and 
+(min-device-width: 200px) 
+and (max-device-width: 1300px) 
+and (orientation: landscape) {
+    .about-card{
+        width: 17.625em;
+    }
+
+}
 
 @media (max-width: 500px){
     .subjects {
@@ -1433,6 +1454,16 @@ b{
         width: 100%;
             }
         }
+
+@media only screen and 
+(min-device-width: 200px) 
+and (max-device-width: 1300px) 
+and (orientation: landscape) {
+    .contact-container{
+        height: auto;
+    }
+
+}
 
 @media (max-width: 1100px){
     .contact-block{
@@ -1544,11 +1575,22 @@ b{
             }
         }
 
+
 @media (max-width: 1100px){
     .projects-card{
         width: 750px;
             }
         }
+
+@media only screen and 
+(min-device-width: 200px) 
+and (max-device-width: 1300px) 
+and (orientation: landscape) {
+    .projects-card{
+        width: 600px;
+    }
+
+}
 
 @media (max-width: 800px){
     .projects-card{

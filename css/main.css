@@ -363,8 +363,8 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 12.625em;
-    height: 13.625em;
+    width: 14.625em;
+    height: 14.625em;
     box-shadow: 0 38px 43px rgba(0,0,0,.09);
     position: relative;
     border: 0.0625em solid #C1C8E4;
@@ -521,6 +521,31 @@ h1{
 .skill-rating i{
     font-size: 0.8rem;
     color: #DFE0E0;
+}
+
+
+#code .skill-block:hover{
+    color: #5AB9EA
+}
+
+#tools .skill-block:hover{
+    color: #FF8DFF;
+}
+
+#web-skills .skill-block:hover{
+    color: #BC75FF;
+}
+
+#systems .skill-block:hover{
+    color: #5680E9;
+}
+
+#personal .skill-block:hover{
+    color: #8860D0;
+}
+
+#languages .skill-block:hover{
+    color: #C1C8E4;
 }
 
 .work-history-container{
@@ -692,7 +717,7 @@ h1{
 }
 
 .projects-card{
-    width: 25.4375em;
+    width: 27.4375em;
     border: 0.0625em solid #C1C8E4;
     border-radius: 0.2em;
     margin-top: 2em;

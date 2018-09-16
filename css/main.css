@@ -24,7 +24,7 @@ body{
 
 :root{
     font-size: 16px;
-    font-family: 'Ubuntu', 'Trebuchet', 'Verdana', 'Tahoma',
+    font-family: 'Lato', 'Trebuchet', 'Verdana', 'Tahoma',
     'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
     /* font-family: 'Josefin Sans', sans-serif; */
     color: #9e9e9e;
@@ -50,6 +50,10 @@ a:visited{
 
 s{
     color: #333;
+}
+
+b{
+    font-weight: 700 !important;
 }
 
 p{
@@ -529,11 +533,11 @@ h1{
 }
 
 #tools .skill-block:hover{
-    color: #BC75FF;
+    color: #9bb2e1;
 }
 
 #web-skills .skill-block:hover{
-    color: #FF8DFF;
+    color: #A5A5F4;
 }
 
 #systems .skill-block:hover{
@@ -545,7 +549,7 @@ h1{
 }
 
 #languages .skill-block:hover{
-    color: #C1C8E4;
+    color: #FF8DFF;
 }
 
 .work-history-container{
@@ -614,10 +618,11 @@ h1{
     width: 4.625em;
     height: 4.625em;
     background-color: #fff;
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     padding: 0.2em;
     /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.09); */
-    box-shadow: 0 14px 28px rgba(0,0,0,0.16), 0 10px 10px rgba(0,0,0,0.09);
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.16), 0 10px 10px rgba(0,0,0,0.09); */
+    box-shadow: 0.125em 0.125em 0.625em rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0em;
     right: -1.5em;
@@ -724,10 +729,14 @@ h1{
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 1em;
-    /* box-shadow: 0 38px 43px rgba(0,0,0, 0.09); */
+    box-shadow: 0 38px 43px rgba(0,0,0, 0.09);
     position: relative;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
+}
+
+.projects-card:hover{
+    box-shadow: 0 18px 23px rgba(0,0,0, 0.1);
 }
 
 .projects-card i{
@@ -747,7 +756,7 @@ h1{
     position: absolute;
 }
 
-#card-1{
+/* #card-1{
     transition: all 0.2s ease-in-out;
     box-shadow: 0 18px 23px rgba(90,185,234, 0.5);
 }
@@ -778,7 +787,7 @@ h1{
 
 #card-4:hover{
     box-shadow: 0 08px 13px rgba(136,96,208, 0.8);
-}
+} */
 
 .projects-card-img{
     height: 17.5em;
@@ -992,11 +1001,24 @@ h1{
 }
 
 .pinkish-purple{
-   background-color:  #BC75FF;
+   /* background-color:  #BC75FF; */
+   background-color: #c79cc8;
+}
+
+.meh-blue{
+    background-color: #9bb2e1;
 }
 
 .light-pink{
     background-color: #FF8DFF;
+}
+
+.pinkish-blue{
+    background-color: #A5A5F4;
+}
+
+.coral{
+    background-color: #efa8b0;
 }
 
 .blackish{
@@ -1032,11 +1054,24 @@ h1{
 }
 
 .pinkish-purple-txt{
-   color:  #BC75FF !important;
+   /* color:  #BC75FF !important; */
+   color: #c79cc8 !important;
+}
+
+.meh-blue-txt{
+    color: #9bb2e1 !important;
 }
 
 .light-pink-txt{
     color: #FF8DFF !important;
+}
+
+.pinkish-blue-txt{
+    color: #A5A5F4 !important;
+}
+
+.coral-txt{
+    color: #efa8b0;
 }
 
 .color-blend-txt{

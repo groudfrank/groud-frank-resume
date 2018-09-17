@@ -572,6 +572,7 @@ h1{
 
 .work-description{
     width: 100%;
+    font-size: 0.089em;
 }
 
 .work-history-block p, h3{
@@ -590,6 +591,7 @@ h1{
 
 .work-lesson{
     margin-right: auto; 
+    font-size: 0.089em;
 }
 
 .services-badge-container{

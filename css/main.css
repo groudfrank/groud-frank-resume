@@ -632,7 +632,7 @@ h1{
 }
 
 .services-badge-icon i{
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fff;
 }
 
@@ -673,9 +673,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10em;
-    height: 10em;
-    margin-bottom: 0em;
+    width: 7em;
+    height: 7em;
+    margin-bottom: 0.5em;
 }
 
 .plan-img-container img{
@@ -724,6 +724,7 @@ h1{
 }
 
 .projects-card{
+    font-size: 0.89em;
     width: 27.4375em;
     border: 0.0625em solid #C1C8E4;
     border-radius: 0.2em;

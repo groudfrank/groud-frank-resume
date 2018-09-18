@@ -48,9 +48,9 @@ a:visited{
     color: #fff;
 }
 
-s{
+/* s{
     color: #333;
-}
+} */
 
 b{
     font-weight: 700 !important;
@@ -887,7 +887,7 @@ h1{
     align-items: center;
     color: #fff;
     text-align: center;
-    margin-bottom: auto;
+    margin-bottom: 2.5em;
 }
 
 .contact-box p{

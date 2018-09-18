@@ -48,9 +48,9 @@ a:visited{
     color: #fff;
 }
 
-/* s{
-    color: #333;
-} */
+s{
+    color: #DFE0E0;
+}
 
 b{
     font-weight: 700 !important;
@@ -401,6 +401,8 @@ h1{
 
 .about-card-icon i{
     font-size: 5em;
+    /* text-shadow: 0 20px 40px rgba(0,0,0,0.2); */
+    text-shadow: 0 18px 20px rgba(0,0,0,0.2);
 }
 
 
@@ -885,18 +887,19 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     margin-bottom: 2.5em;
 }
 
 .contact-box p{
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-top: 1em;
 }
 
 .contact-icon{
     font-size: 3.5rem;
+    text-shadow: 0 18px 20px rgba(0,0,0,0.2);
 }
 
 .social-media-icons-container{
@@ -936,7 +939,7 @@ h1{
 }
 
 .social-media-icons i:hover{
-    color: #fff;
+    color: #555;
 }
 
 /* #behance{
@@ -1208,6 +1211,10 @@ b{
 
 .attribution a:hover{
     color: #333;
+}
+
+.txt-shadow{
+    text-shadow: 0 18px 20px rgba(0,0,0,0.2);
 }
 
 

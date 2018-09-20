@@ -485,7 +485,7 @@ h1{
     background-color: #fff;
     width: 1.5em;
     height: 1.5em;
-    padding: 0.6rem;
+    /* padding: 0.6rem; */
     /* border: solid 0.05rem #eee; */
     box-shadow: 0 0.4375rem 2.25rem rgba(0,0,0,0.08);
     border-radius: 0.4rem;

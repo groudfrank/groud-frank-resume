@@ -35,12 +35,13 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
 <title>Groud Frank - Web Developer/Designer | Digital Resume</title>
 </head>
 <body>
-<nav id="desktop-nav">
-    <div class="nav-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="nav-dropdown-desktop hide-me">
+<div class="nav-btn-d">
+    <i class="fas fa-bars"></i>
+</div>
+<nav id="desktop-nav" class="navigation-closed">
+    <div class="navbar-content">
         <div class="nav-menu-container">
+            <hr>
             <a href="#profile"><p class="menu-option" title="profile">PROFILE</p></a>
             <a href="#expertise"><p class="menu-option" title="expertise">EXPERTISE</p></a>
             <a href="https://medium.com/@groudfrank" title="blog" target="_blank" rel="noopener">
@@ -52,7 +53,7 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
         <figure class="nav-logo-container">
             <img src="icon/logo.svg" alt="Groud Frank Logo">
         </figure>
-
+    
         <div class="nav-social-container">
             <a href="https://www.behance.net/groudfrank7457" title="behance" target="_blank" rel="noopener">
                 <i class="fab fa-behance nav-social"></i>
@@ -63,6 +64,9 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
             <a href="https://plus.google.com/+GroudFrank" title="google plus" target="_blank" rel="noopener">
                 <i class="fab fa-google-plus-g nav-social"></i>
             </a>
+        </div>
+
+        <div class="nav-social-container">
             <a href="https://twitter.com/groudfrank" title="twitter" target="_blank" rel="noopener">
                 <i class="fab fa-twitter nav-social"></i>
             </a>
@@ -75,9 +79,10 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
         </div>
 
     </div>
-</nav> <!--desktop navigation bar -->
+</nav> 
+<!-- desktop navigation bar -->
 
-<div class="nav-btn-m">
+<div class="nav-btn-d-m">
     <i class="fas fa-bars"></i>
 </div>
 
@@ -117,6 +122,8 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
         </a>
     </div>
 </nav>
+
+<div id="pseudo-body"> <!-- PSEUDO BODY -->
 <header id="header">
     <figure class="header-dp">
         <img src="img/placeholder.gif" data-src="img/groudfrank.jpg" class="b-lazy" alt="Groud Frank">
@@ -131,7 +138,7 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
     </div>
     <p class="sub-heading">Web Developer | Digital Resume</p>
 </header>
-<div id="pseudo-body">
+<div id="pg-content">  <!-- PAGE CONTENT -->
 <section id="profile" class="main-section">
     <h4 class="main-heading gradient-txt">PROFILE</h4>
     <div id="about" class="subsection">
@@ -144,16 +151,6 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
             <div class="div-round-right sky-blue"></div>
         </div>
         <p class="standard-p">
-            <!-- <s>Hi, My name is Groud and I'm 28 years old. I like cats and enjoy long 
-            walks on the beach...</s> Here's the truth:
-            I am sometimes socially awkward, somewhat clumsy and avoid holding
-            babies because I drop things. I was born for awesomeness though, not
-            perfection.
-            <br>
-            <br>
-            I'm a self-taught web developer who is passionate about design and eye-candy
-            in general. I'm a son, a brother - analog at birth but digital at heart - 
-            working daily to create version 2.0 of myself. -->
             I'm a self-taught web developer who is obsessed with colors,
             textures, shapes, typography and iconography on digital canvases.
             I'm a son, a brother - analog at birth but digital at heart - 
@@ -1673,23 +1670,25 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
 </section>
 </div>
 <footer id="footer">
-    <p class="attribution standard-p">
-        <b>CC:</b> These SVGs and font icons are provided by the awesome Flaticon community
-        and their authors - 
-        <a href="https://www.flaticon.com/authors/freepik"
-        title="attribution to freepik"
-        target="_blank" rel="noopener">Freepik</a>,
-        <a href="https://www.flaticon.com/authors/smashicons"
-        target="attribution to smashicons"
-        target="_blank" rel="noopener">Smashicons</a> and
-        <a href="https://fontawesome.com/"
-        title="attribution to fontawesome" 
-        target="_blank" rel="noopener">FontAwesome</a>
-        <br>
-        <br>
-        &copy; Groud Frank 2018.
-    </p>
-</footer>
+        <p class="attribution standard-p">
+            <b>CC:</b> These SVGs and font icons are provided by the awesome Flaticon community
+            and their authors - 
+            <a href="https://www.flaticon.com/authors/freepik"
+            title="attribution to freepik"
+            target="_blank" rel="noopener">Freepik</a>,
+            <a href="https://www.flaticon.com/authors/smashicons"
+            target="attribution to smashicons"
+            target="_blank" rel="noopener">Smashicons</a> and
+            <a href="https://fontawesome.com/"
+            title="attribution to fontawesome" 
+            target="_blank" rel="noopener">FontAwesome</a>
+            <br>
+            <br>
+            &copy; Groud Frank 2018.
+        </p>
+    </footer>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>

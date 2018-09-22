@@ -105,15 +105,22 @@ h1{
     align-items: center;
     width: 5em;
     height: 5em;
-    /* border: solid red 2px; */
     color: #fff;
     position: fixed;
     z-index: 10;
     top: 0;
+    /*important for the rotation of the nav btn*/
+    transition: all 0.2s linear;
+    overflow: hidden;
 }
 
 .nav-btn-d i{
     font-size: 2.1em;
+    /* transition: all 0.01s linear; */
+}
+
+.nav-btn-d:hover i{
+    transform: scale(1.15);
 }
 
 .nav-menu-container{
@@ -140,7 +147,8 @@ h1{
 }
 
 .menu-option:hover{
-    filter: blur(2px);
+    color: #9e9e9e;
+    transform: scale(1.2)
 }
 
 .nav-logo-container{
@@ -170,7 +178,8 @@ h1{
 }
 
 .nav-social:hover{
-    filter: blur(2px);
+    transform: scale(1.3);
+    color: #9e9e9e;
 }
 
 #mobile-nav{
@@ -949,11 +958,12 @@ h1{
 
 .social-media-icons i{
     font-size: 2rem;
-    transition: all 0.1s ease-in-out;
+    transition: all 0s ease-in-out;
 }
 
 .social-media-icons i:hover{
-    color: #555;
+    color: #333;
+    transform: scale(1.3);
 }
 
 /* #behance{
@@ -1280,7 +1290,9 @@ b{
 
 .nav-btn-d-transition{
     color: #333;
-    transition: all 0.2s linear;
+    /* transform: rotate(135deg);  */
+    transform: scaleX(-1);
+    
 }
 
 .make-transparent{

@@ -11,6 +11,7 @@ $(document).ready(function(){
     function closeNav(){
         setTimeout(function(){
             $nav_btn.removeClass('nav-btn-d-transition');
+            // $nav_btn.removeClass('nav-btn-rotate');
         }, 1000);
         // TweenMax.to($nav_dropdown_desktop, 0.2, {y: -100, opacity: 1, delay:1, onComplete: navbarOrigin});
         pseudoBodyOrigin();
@@ -59,10 +60,12 @@ $(document).ready(function(){
         if($desktop_nav.hasClass('navigation-closed')){
             $desktop_nav.removeClass('navigation-closed');
             $nav_btn.addClass('nav-btn-d-transition');
+            // $nav_btn.addClass('nav-btn-rotate');
             TweenMax.to($pseudo_body, 0.2, {x: ($window_width * 0.25)});
         }
         else{
             $nav_btn.removeClass('nav-btn-d-transition');
+            // $nav_btn.removeClass('nav-btn-rotate');
             pseudoBodyOrigin();
         }
     });

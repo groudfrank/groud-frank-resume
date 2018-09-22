@@ -8,21 +8,23 @@ $(document).ready(function(){
     $mobile_nav = $('#mobile-nav');
     $window_width = $(window).width();
 
+    // closes the navigation bar and removes transition styling for 
+    // the navigation button(DESKTOP).
     function closeNav(){
-        setTimeout(function(){
-            $nav_btn.removeClass('nav-btn-d-transition');
-            // $nav_btn.removeClass('nav-btn-rotate');
-        }, 1000);
-        // TweenMax.to($nav_dropdown_desktop, 0.2, {y: -100, opacity: 1, delay:1, onComplete: navbarOrigin});
+        $nav_btn.removeClass('nav-btn-d-transition');
         pseudoBodyOrigin();
 
     };
 
+    // closes the navigation bar and removes transition styling for 
+    // the navigation button(DESKTOP).
     function closeNavMobile(){
         $nav_btn_m.removeClass('make-transparent');
         TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
     }
 
+
+    // closes the navigation section when the man page content is clicked
     $pseudo_body.on('click', function(){
         if($desktop_nav.hasClass('navigation-closed') == false){
             $nav_btn.removeClass('nav-btn-d-transition');
@@ -30,6 +32,7 @@ $(document).ready(function(){
         }
     })
 
+    // scroll to animation
     $("a").on('click', function(event) {
         
             if (this.hash !== "") {

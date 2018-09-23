@@ -7,6 +7,9 @@ $(document).ready(function(){
     $nav_btn_m = $('.nav-btn-d-m');
     $mobile_nav = $('#mobile-nav');
     $window_width = $(window).width();
+    $work_history_btn = $('#work-history-btn');
+    $work_history_btn_txt = $('#work-history-btn p');
+    $work_history_container = $('.work-history-container');
 
     // closes the navigation bar and removes transition styling for 
     // the navigation button(DESKTOP).
@@ -64,7 +67,7 @@ $(document).ready(function(){
             $desktop_nav.removeClass('navigation-closed');
             $nav_btn.addClass('nav-btn-d-transition');
             // $nav_btn.addClass('nav-btn-rotate');
-            TweenMax.to($pseudo_body, 0.2, {x: ($window_width * 0.25)});
+            TweenMax.to($pseudo_body, 0.2, {x: ($window_width * 0.23)});
         }
         else{
             $nav_btn.removeClass('nav-btn-d-transition');
@@ -96,6 +99,18 @@ $(document).ready(function(){
             TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
         }
     });
+
+// Display/hide work histroy botton
+    $work_history_btn.on('click', function(){
+        if($work_history_container.hasClass('close-content')){
+            $work_history_container.removeClass('close-content');
+            $work_history_btn_txt.text('Hide Work History');
+        }
+        else{
+            $work_history_container.addClass('close-content');
+            $work_history_btn_txt.text('Show Work History');
+        }
+    })
 
 
 }); //Document

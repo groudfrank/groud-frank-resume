@@ -104,11 +104,11 @@ $(document).ready(function(){
     $work_history_btn.on('click', function(){
         if($work_history_container.hasClass('close-content')){
             $work_history_container.removeClass('close-content');
-            $work_history_btn_txt.text('Hide Work History');
+            $work_history_btn_txt.text('Hide work history');
         }
         else{
             $work_history_container.addClass('close-content');
-            $work_history_btn_txt.text('Show Work History');
+            $work_history_btn_txt.text('Show work history');
         }
     })
 

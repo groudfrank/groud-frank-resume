@@ -28,7 +28,8 @@ body{
     font-family: 'Lato', 'Trebuchet', 'Verdana', 'Tahoma',
     'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
     /* color: #9e9e9e; */
-    color: #8a8a8a;
+    /* color: #8a8a8a; */
+    color: #526173;
 }
 
 a{
@@ -302,7 +303,7 @@ h1{
 
 .heading{
     font-size: 3.5em;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0em;
     text-align: center;
     /* font-family: 'Fredericka the Great', cursive; */
@@ -320,23 +321,23 @@ h1{
 }
 
 .div-round-left{
-    width: 0.5em;
-    height: 0.5em;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     margin-right: 0.4em;
     background-color: #fff;
 }
 
 .div-round-right{
-    width: 0.5em;
-    height: 0.5em;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     margin-left: 0.4em;
     background-color: #fff;
 }
 
 .div-long{
-    height: 0.5em;
+    height: 7px; /*rems and ems caused rendering issues with the  height in different sections*/
     width: 9em;
     border-radius: 5px; 
     background-color: #fff;
@@ -767,7 +768,7 @@ h1{
 }
 
 .code-snippet-container h2{
-    font-weight: 100;
+    font-weight: 400;
     margin-bottom: 0em;
 }
 
@@ -855,13 +856,17 @@ h1{
     height: 10.625em;
 }
 
+.projects-card-description h6{
+    color: #9e9e9e;
+}
+
 .projects-card-description h4, h6, p{
     margin-top: 0em;
     margin-bottom: 1em;
 }
 
 .projects-card-description h4{
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .pg-btn{

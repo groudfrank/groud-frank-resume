@@ -27,9 +27,9 @@ body{
     font-size: 16px;
     font-family: 'Lato', 'Trebuchet', 'Verdana', 'Tahoma',
     'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
-    /* color: #9e9e9e; */
+    color: #9e9e9e;
     /* color: #8a8a8a; */
-    color: #526173;
+    /* color: #526173; */
 }
 
 a{
@@ -60,7 +60,7 @@ b{
 
 p{
   /* font-size: 1rem;  */
-  font-weight: 100;
+  font-weight: 400;
   line-height: 1.3;
 }
 
@@ -364,10 +364,12 @@ h1{
 
 #pg-content h1{
     font-size: 1.5rem;
+    font-weight: 100;
 }
 
 #pg-content h1, h2, h3, h4, h5, h6{
-    color: #777;
+    /* color: #777; */
+    color: #526173;
 }
 
 .main-section{
@@ -493,6 +495,7 @@ h1{
 }
 
 .subject-content p{
+    color: #526173;
     margin-bottom: 0em;
 }
 
@@ -856,9 +859,6 @@ h1{
     height: 10.625em;
 }
 
-.projects-card-description h6{
-    color: #9e9e9e;
-}
 
 .projects-card-description h4, h6, p{
     margin-top: 0em;
@@ -1259,7 +1259,7 @@ h1{
 
 .standard-p{
     width: 50%;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .target-word{
@@ -1269,6 +1269,7 @@ h1{
 .big-p{
     /* color: #9e9e9e; */
     font-size: 4em;
+    font-weight: 100;
     width: 60%;
     margin-bottom: 0em;
 }

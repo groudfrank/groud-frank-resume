@@ -9,7 +9,7 @@ body{
     width: 100%;
     max-width: 100vw;
     height: auto;
-    background: black;
+    background-color: #fff;
     overflow-x: hidden; 
     z-index: -2;
 }
@@ -28,7 +28,7 @@ body{
     font-family: 'Lato', 'Trebuchet', 'Verdana', 'Tahoma',
     'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
     /* color: #9e9e9e; */
-    color: #777;
+    color: #8a8a8a;
 }
 
 a{
@@ -342,15 +342,6 @@ h1{
     background-color: #fff;
 }
 
-/* .div-rectangle-top{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 10px;
-    background-color: red;
-    box-shadow: 0 18px 23px rgba(0,0,0, 0.1);
-} */
-
 #pseudo-body{
     width: 100%;
     height: 100%;
@@ -375,7 +366,7 @@ h1{
 }
 
 #pg-content h1, h2, h3, h4, h5, h6{
-    color: #9e9e9e;
+    color: #777;
 }
 
 .main-section{
@@ -814,7 +805,6 @@ h1{
 
 .projects-card{
     font-size: 0.89em;
-    color: #9e9e9e;
     width: 28.4375em;
     border: 0.0625em solid #C1C8E4;
     border-radius: 0.2em;
@@ -887,7 +877,7 @@ h1{
     transition: all 0.1s ease-in-out;
     position: relative;
     /* box-shadow: 0 0.0625em 0.1875em rgba(0,0,0,0.12), 0  0.0625em 0.125em rgba(0,0,0,0.24); */
-    box-shadow: 0 2px 25px rgba(86,128,233, 0.5);
+    box-shadow: 0 2px 25px 2px rgba(86,128,233, 0.5);
 }
 
 
@@ -1040,7 +1030,7 @@ h1{
     position: relative;
 }
 
-/*----------Colors----------*/
+/*----------COLOURS----------*/
 ::selection{
     color: #fff;
     background: #333;
@@ -1202,7 +1192,7 @@ h1{
 }
 
 
-/*----------Format----------*/
+/*----------SHAPES & FORMATTING----------*/
 .pin{
     width: 0.5rem;
     height: 0.5rem;
@@ -1272,7 +1262,7 @@ h1{
 }
 
 .big-p{
-    color: #9e9e9e;
+    /* color: #9e9e9e; */
     font-size: 4em;
     width: 60%;
     margin-bottom: 0em;
@@ -1313,17 +1303,7 @@ b{
     text-align: right;
 }
 
-/*----------Transitions----------*/
-/* .toggle-nav-on{
-    opacity: 1;
-    transform: translateY(1em);
-    transition: all 0.2s ease-in-out;
-}
-
-.toggle-nav-off{
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-} */
+/*----------TRANSITIONS----------*/
 
 .hide-me{
     visibility: hidden;

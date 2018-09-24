@@ -59,7 +59,7 @@ b{
 }
 
 p{
-  /* font-size: 1rem;  */
+  font-size: 0.94rem; 
   font-weight: 400;
   line-height: 1.3;
 }
@@ -146,7 +146,7 @@ h1{
 
 
 .menu-option{
-    font-weight: bold;
+    font-weight: 300;
     color: #333;
     margin-bottom: 0em;
     transition: color 0.1s ease-in-out;
@@ -495,7 +495,6 @@ h1{
 }
 
 .subject-content p{
-    color: #526173;
     margin-bottom: 0em;
 }
 
@@ -1267,7 +1266,7 @@ h1{
 }
 
 .big-p{
-    /* color: #9e9e9e; */
+    color: #526173;
     font-size: 4em;
     font-weight: 100;
     width: 60%;
@@ -1400,6 +1399,69 @@ and (orientation: portrait){
         font-size: calc(16px * 2.4);
         }
     }
+
+    @media only screen and 
+    (min-device-width: 200px) 
+    and (max-device-width: 1300px) 
+    and (orientation: landscape) {
+        p{
+            font-size: 17px;
+        }
+    
+    }
+    
+    @media (max-width: 1100px)
+    and (orientation: portrait){
+        p {
+            font-size: 30px;
+                }
+            }
+    
+    @media (max-width: 800px){
+        p {
+            font-size: 16px;
+                }
+            }
+    
+    @media (max-width: 800px)
+    and (orientation: portrait){
+    p {
+        font-size: 22px;
+            }
+        }
+    
+    @media (max-width: 500px)
+    and (orientation: portrait){
+    p {
+        font-size: 18px;
+            }
+        }
+    
+    @media (max-width: 400px)
+    and (orientation: portrait){
+        p {
+            font-size: 15px;
+                }
+            }
+    
+    @media (max-width: 360px)
+    and (orientation: portrait){
+        p {
+            font-size: 15px;
+                }
+            }
+
+    @media only screen  and (min-width : 2000px) {
+        p {
+            font-size: calc(16px * 1.3);
+            }
+        }
+        
+    @media only screen  and (min-width : 3000px) {
+        p {
+            font-size: calc(16px * 2.4);
+            }
+        }
 
 @media (max-width: 500px){
     h1 {

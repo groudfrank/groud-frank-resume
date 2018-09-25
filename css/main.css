@@ -248,6 +248,7 @@ h1{
 .menu-option-m{
     font-size: 1.5rem;
     color: #fff;
+    font-weight: 300;
 }
 
 .nav-social-container-m{
@@ -346,7 +347,7 @@ h1{
 #pseudo-body{
     width: 100%;
     height: 100%;
-    background: linear-gradient(93deg, #5AB9EA,  #8860D0);
+    background: linear-gradient(94deg, #5AB9EA,  #8860D0);
     box-shadow: -38px 0 43px rgba(0,0,0,0.14);
 }
 
@@ -1400,72 +1401,72 @@ and (orientation: portrait){
         }
     }
 
-    @media only screen and 
-    (min-device-width: 200px) 
-    and (max-device-width: 1300px) 
-    and (orientation: landscape) {
-        p{
-            font-size: 17px;
+@media only screen and 
+(min-device-width: 200px) 
+and (max-device-width: 1300px) 
+and (orientation: landscape) {
+    p{
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 1100px)
+and (orientation: portrait){
+    p {
+        font-size: 30px;
+            }
         }
-    
+
+@media (max-width: 800px){
+    p {
+        font-size: 16px;
+            }
+        }
+
+@media (max-width: 800px)
+and (orientation: portrait){
+p {
+    font-size: 22px;
+        }
+    }
+
+@media (max-width: 500px)
+and (orientation: portrait){
+p {
+    font-size: 18px;
+        }
+    }
+
+@media (max-width: 400px)
+and (orientation: portrait){
+    p {
+        font-size: 15px;
+            }
+        }
+
+@media (max-width: 360px)
+and (orientation: portrait){
+    p {
+        font-size: 15px;
+            }
+        }
+
+@media only screen  and (min-width : 2000px) {
+    p {
+        font-size: calc(16px * 1.3);
+        }
     }
     
-    @media (max-width: 1100px)
-    and (orientation: portrait){
-        p {
-            font-size: 30px;
-                }
-            }
-    
-    @media (max-width: 800px){
-        p {
-            font-size: 16px;
-                }
-            }
-    
-    @media (max-width: 800px)
-    and (orientation: portrait){
+@media only screen  and (min-width : 3000px) {
     p {
-        font-size: 22px;
-            }
+        font-size: calc(16px * 2.4);
         }
-    
-    @media (max-width: 500px)
-    and (orientation: portrait){
-    p {
-        font-size: 18px;
-            }
-        }
-    
-    @media (max-width: 400px)
-    and (orientation: portrait){
-        p {
-            font-size: 15px;
-                }
-            }
-    
-    @media (max-width: 360px)
-    and (orientation: portrait){
-        p {
-            font-size: 15px;
-                }
-            }
-
-    @media only screen  and (min-width : 2000px) {
-        p {
-            font-size: calc(16px * 1.3);
-            }
-        }
-        
-    @media only screen  and (min-width : 3000px) {
-        p {
-            font-size: calc(16px * 2.4);
-            }
-        }
+    }
 
 @media (max-width: 500px){
     h1 {
-        font-size: 1.3rem !important;
+        font-size: 1.5rem !important;
             }
         }
 
@@ -1504,6 +1505,14 @@ and (orientation: portrait){
         width: 80%;
             }
         }
+
+@media (max-width: 1100px){
+    #pseudo-body {
+        height: 100%;
+    background: linear-gradient(90.3deg, #5AB9EA,  #8860D0);
+            }
+        }
+
 
 @media (max-width: 1100px){
     #pg-content {

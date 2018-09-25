@@ -4,7 +4,7 @@ $(document).ready(function(){
     $nav_btn = $('.nav-btn-d');
     $desktop_nav = $('#desktop-nav');
     $nav_bar_content = $('.navbar-content');
-    $nav_btn_m = $('.nav-btn-d-m');
+    $nav_btn_m = $('.nav-btn-m');
     $mobile_nav = $('#mobile-nav');
     $window_width = $(window).width();
     $work_history_btn = $('#work-history-btn');

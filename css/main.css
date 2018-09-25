@@ -211,12 +211,12 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.5em;
-    height: 3.5em;
+    width: 10em;
+    height: 10em;
     margin: 0.4em 1em 1em 1em;
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    top: 0;
+    top: 0; */
 }
 
 .nav-logo-container-m img{
@@ -245,13 +245,14 @@ h1{
 }
 
 .nav-menu-container-m{
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .menu-option-m{
     font-size: 1.5rem;
     color: #fff;
     font-weight: 300;
+    margin-bottom: 0.6rem;
 }
 
 .nav-social-container-m{

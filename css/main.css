@@ -204,7 +204,7 @@ h1{
     width: 100vw;
     height: 100vh;
     /* background-color: rgba(51,51,51, 0.97); */
-    background-color: rgba(82,97,115, 0.99);
+    background-color: rgba(82,97,115, 0.97);
 }
 
 .nav-logo-container-m{
@@ -252,7 +252,7 @@ h1{
     font-size: 1.5rem;
     color: #fff;
     font-weight: 300;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .nav-social-container-m{

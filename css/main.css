@@ -203,7 +203,8 @@ h1{
     z-index: 5;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(51,51,51, 0.97);
+    /* background-color: rgba(51,51,51, 0.97); */
+    background-color: rgba(82,97,115, 0.99);
 }
 
 .nav-logo-container-m{
@@ -227,19 +228,20 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4em;
-    height: 3.7em;
+    width: 4.2em;
+    height: 4.2em;
     color: #fff;
     border-radius: 0em 0em 0.4em 0em;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 6;
-    background-color: rgba(51,51,51, 0.4);
+    /* background-color: rgba(51,51,51, 0.4); */
+    background-color: rgba(82,97,115, 0.9);
 }
 
 .nav-btn-m i{
-    font-size: 2.1em;
+    font-size: 2.5em;
 }
 
 .nav-menu-container-m{

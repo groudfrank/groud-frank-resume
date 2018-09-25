@@ -230,8 +230,7 @@ h1{
     width: 4em;
     height: 3.7em;
     color: #fff;
-    border-radius: 0em 1em 1em 0em;
-    margin-top: 1em;
+    border-radius: 0em 0em 0.4em 0em;
     position: fixed;
     left: 0;
     top: 0;
@@ -240,7 +239,7 @@ h1{
 }
 
 .nav-btn-m i{
-    font-size: 1.5em;
+    font-size: 2.1em;
 }
 
 .nav-menu-container-m{

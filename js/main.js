@@ -42,13 +42,15 @@ $(document).ready(function(){
             
               event.preventDefault();
               var hash = this.hash;
+              // close mobile navigation element before animation
+              closeNavMobile();
         
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
               }, 800, function(){
                 window.location.hash = hash;
+                // close mdesktop navigation element after animation
                 closeNav();
-                closeNavMobile();
               });
             } 
           });

@@ -455,6 +455,7 @@ h1{
 
 
 .subjects-heading{
+    font-weight: 400;
     margin-top: 2em;
 }
 
@@ -960,7 +961,7 @@ h1{
 }
 
 .contact-box p{
-    /* font-weight: bold; */
+    color: #526173;
     margin-top: 1em;
 }
 

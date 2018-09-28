@@ -205,7 +205,7 @@ h1{
     width: 100vw;
     height: 100vh;
     /* background-color: rgba(51,51,51, 0.97); */
-    background-color: rgba(82,97,115, 0.99);
+    background-color: rgba(82,97,115, 1);
 }
 
 .nav-logo-container-m{
@@ -239,10 +239,12 @@ h1{
     z-index: 6;
     /* background-color: rgba(51,51,51, 0.4); */
     background-color: rgba(82,97,115, 0.9);
+    transition: all 0.2s linear;
 }
 
 .nav-btn-m i{
-    font-size: 2.5em;
+    font-size: 2.3em;
+    transition: inherit;
 }
 
 .nav-menu-container-m{
@@ -1348,9 +1350,8 @@ b{
     
 }
 
-.make-transparent{
-    background: rgba(51,51,51, 0);
-    transition: all 0.2s linear;
+.nav-btn-m-transition{
+    transform: rotate(135deg); 
 }
 
 

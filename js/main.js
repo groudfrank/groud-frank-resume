@@ -5,6 +5,7 @@ $(document).ready(function(){
     $desktop_nav = $('#desktop-nav');
     $nav_bar_content = $('.navbar-content');
     $nav_btn_m = $('.nav-btn-m');
+    $nav_btn_m_icon = $('.nav-btn-m i');
     $mobile_nav = $('#mobile-nav');
     $window_width = $(window).width();
     $work_history_btn = $('#work-history-btn');
@@ -22,7 +23,7 @@ $(document).ready(function(){
     // closes the navigation bar and removes transition styling for 
     // the navigation button(DESKTOP).
     function closeNavMobile(){
-        $nav_btn_m.removeClass('make-transparent');
+        $nav_btn_m_icon.removeClass('nav-btn-m-transition');
         TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
     }
 
@@ -93,11 +94,11 @@ $(document).ready(function(){
     $nav_btn_m.on('click', function(){
         if($mobile_nav.hasClass('no-display')){
             $mobile_nav.removeClass('no-display');
-            $nav_btn_m.addClass('make-transparent');
+            $nav_btn_m_icon.addClass('nav-btn-m-transition');
             TweenMax.from($mobile_nav, 0.2,{opacity: 0, scale: 0.9});
         }
         else{
-            $nav_btn_m.removeClass('make-transparent');
+            $nav_btn_m_icon.removeClass('nav-btn-m-transition');
             TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
         }
     });

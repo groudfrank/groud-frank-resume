@@ -787,8 +787,9 @@ h1{
 }
 
 .code-img{
+    display: flex;
     width: 33em;
-    height: 23em;
+    /* height: 23em; */
     border-radius: 0.5rem;
     margin: 1em 0em 1em 0em;
     overflow: hidden;
@@ -1829,7 +1830,7 @@ and (orientation: landscape) {
 @media (max-width: 1100px){
     .code-img{
         width: 27em;
-        height: 19em;
+        /* height: 19em; */
         border-radius: 0.3rem;
             }
         }
@@ -1837,7 +1838,7 @@ and (orientation: landscape) {
 @media (max-width: 500px){
     .code-img{
         width: 18.5em;
-        height: 12.5em;
+        /* height: 12.5em; */
         border-radius: 0.2rem;
             }
         }
@@ -1845,7 +1846,7 @@ and (orientation: landscape) {
 @media (max-width: 320px){
     .code-img{
         width: 18em;
-        height: 12em;
+        /* height: 12em; */
         border-radius: 0.25rem;
             }
         }

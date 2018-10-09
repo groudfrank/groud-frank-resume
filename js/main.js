@@ -11,6 +11,7 @@ $(document).ready(function(){
     $work_history_btn = $('#work-history-btn');
     $work_history_btn_txt = $('#work-history-btn p');
     $work_history_container = $('.work-history-container');
+    $fading_divider = $('.fading-divider');
 
     // closes the navigation bar and removes transition styling for 
     // the navigation button(DESKTOP).
@@ -106,10 +107,12 @@ $(document).ready(function(){
 // Display/hide work histroy botton
     $work_history_btn.on('click', function(){
         if($work_history_container.hasClass('close-content')){
+            $fading_divider.removeClass('close-divider');
             $work_history_container.removeClass('close-content');
             $work_history_btn_txt.text('Hide work history');
         }
         else{
+            $fading_divider.addClass('close-divider');
             $work_history_container.addClass('close-content');
             $work_history_btn_txt.text('Show work history');
         }

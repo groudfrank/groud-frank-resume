@@ -7,11 +7,20 @@ $(document).ready(function(){
     $nav_btn_m = $('.nav-btn-m');
     $nav_btn_m_icon = $('.nav-btn-m i');
     $mobile_nav = $('#mobile-nav');
+    $window = $(window);
     $window_width = $(window).width();
     $work_history_btn = $('#work-history-btn');
     $work_history_btn_txt = $('#work-history-btn p');
     $work_history_container = $('.work-history-container');
     $fading_divider = $('.fading-divider');
+
+
+    // Ensures the pseudo body is displaced to the right width when
+    // the size of the browser is changed. This ensures that the 
+    // navigation bar hidden beneath is properly exposed.
+    $window.on('resize', function(){
+        $window_width = $window.width();
+    });
 
     // closes the navigation bar and removes transition styling for 
     // the navigation button(DESKTOP).

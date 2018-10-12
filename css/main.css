@@ -1382,9 +1382,18 @@ b{
 
 /*----------Media Queries----------*/
 
-@media only screen and 
+/* @media only screen and 
 (min-device-width: 200px) 
 and (max-device-width: 1300px) 
+and (orientation: landscape) {
+    :root{
+        font-size: 17px;
+    }
+
+} */
+
+@media only screen 
+and (max-device-width: 900px) 
 and (orientation: landscape) {
     :root{
         font-size: 17px;
@@ -1445,9 +1454,8 @@ and (orientation: portrait){
         }
     }
 
-@media only screen and 
-(min-device-width: 200px) 
-and (max-device-width: 1300px) 
+@media only screen 
+and (max-device-width: 900px) 
 and (orientation: landscape) {
     p{
         font-size: 17px;
@@ -1606,6 +1614,15 @@ and (orientation: portrait){
             }
         }
 
+@media only screen 
+and (max-device-width: 1100px) 
+and (orientation: landscape) {
+    .standard-p{
+        width: 60%;
+    }
+
+}
+
 @media (max-width: 800px){
     .standard-p {
         width: 90%;
@@ -1617,7 +1634,17 @@ and (orientation: portrait){
         width: 80%;
             }
         }
-            
+
+        
+@media only screen 
+and (max-device-width: 900px) 
+and (orientation: landscape) {
+    .standard-p{
+        width: 75%;
+    }
+
+}        
+
 @media (max-width: 500px){
     .standard-p {
         width: 96%;
@@ -1646,6 +1673,15 @@ and (orientation: portrait){
             }
         }
 
+@media only screen 
+and (max-device-width: 1100px) 
+and (orientation: landscape) {
+    .about-card-container{
+        flex-direction: row;
+    }
+
+}
+
 @media (max-device-width: 1100px){
     .about-card {
         margin-bottom: 2em;
@@ -1653,12 +1689,21 @@ and (orientation: portrait){
             }
         }
 
-@media only screen and 
-(min-device-width: 200px) 
-and (max-device-width: 1300px) 
+@media only screen 
+and (max-device-width: 800px) 
 and (orientation: landscape) {
     .about-card{
-        width: 14.625em;
+        font-size: 17px;
+    }
+
+}
+
+@media only screen
+and (max-device-width: 1100px) 
+and (orientation: landscape) {
+    .about-card{
+       margin-left: 1em;
+       margin-right: 1em;
     }
 
 }
@@ -1802,9 +1847,8 @@ and (orientation: landscape) {
             }
         }
 
-@media only screen and 
-(min-device-width: 200px) 
-and (max-device-width: 1300px) 
+@media only screen 
+and (max-device-width: 900px) 
 and (orientation: landscape) {
     .contact-container{
         height: auto;
@@ -1992,12 +2036,20 @@ and (orientation: landscape) {
             }
         }
 
-@media only screen and 
-(min-device-width: 200px) 
-and (max-device-width: 1300px) 
+@media only screen 
+and (max-device-width: 1100px) 
 and (orientation: landscape) {
     .projects-card{
-        width: 65%;
+        width: 58vw;
+    }
+
+}
+
+@media only screen
+and (max-device-width: 900px) 
+and (orientation: landscape) {
+    .projects-card{
+        width: 75%;
     }
 
 }

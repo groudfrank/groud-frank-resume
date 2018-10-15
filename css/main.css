@@ -1480,7 +1480,8 @@ p {
 @media (max-device-width: 500px)
 and (orientation: portrait){
 p {
-    font-size: 18px;
+    font-size: 17px;
+    word-spacing: 1px;
         }
     }
 

@@ -1424,7 +1424,7 @@ and (orientation: portrait){
 @media (max-device-width: 500px)
 and (orientation: portrait){
 :root {
-    font-size: 18px;
+    font-size: 17px;
         }
     }
 

@@ -139,8 +139,8 @@ h1{
 }
 
 .nav-btn-nubs{
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     margin: 0.13em 0.13em;
     transition: all 0.3s linear;

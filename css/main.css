@@ -139,10 +139,10 @@ h1{
 }
 
 .nav-btn-nubs{
-    width: 0.4em;
-    height: 0.4em;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    margin: 0.1em 0.1em;
+    margin: 0.13em 0.13em;
     transition: all 0.3s linear;
     /* background: #333; */
 }
@@ -256,10 +256,10 @@ h1{
     transition: all 0.2s linear;
 }
 
-.nav-btn-m i{
+/* .nav-btn-m i{
     font-size: 2.3em;
     transition: inherit;
-}
+} */
 
 
 .menu-option-m{
@@ -1470,6 +1470,20 @@ and (orientation: portrait){
 @media (min-width: 1100px){
     .nav-btn-m {
         display: none;
+            }
+        }
+
+@media (max-width: 1100px){
+    .nav-btn-nubs {
+        width: 9px;
+        height: 9px;
+            }
+        }
+
+@media (max-width: 500px){
+    .nav-btn-nubs {
+        width: 7px;
+        height: 7px;
             }
         }
 

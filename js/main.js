@@ -5,7 +5,9 @@ $(document).ready(function(){
     $desktop_nav = $('#desktop-nav');
     $nav_bar_content = $('.navbar-content');
     $nav_btn_m = $('.nav-btn-m');
-    $nav_btn_m_icon = $('.nav-btn-m i');
+    // $nav_btn_m_icon = $('.nav-btn-m i');
+    $nav_btn_nubs = $('.nav-btn-nubs');
+    $hideable =$('.hideable');
     $mobile_nav = $('#mobile-nav');
     $window = $(window);
     $window_width = $(window).width();
@@ -25,7 +27,7 @@ $(document).ready(function(){
     // closes the navigation bar and removes transition styling for 
     // the navigation button(DESKTOP).
     function closeNav(){
-        $nav_btn.removeClass('nav-btn-d-transition');
+        nubDetransition();
         pseudoBodyOrigin();
 
     };
@@ -33,15 +35,26 @@ $(document).ready(function(){
     // closes the navigation bar and removes transition styling for 
     // the navigation button(DESKTOP).
     function closeNavMobile(){
-        $nav_btn_m_icon.removeClass('nav-btn-m-transition');
+        // $nav_btn_m_icon.removeClass('nav-btn-m-transition');
         TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
     }
+    
+    function nubTransition(){
+        if($nav_btn_nubs.hasClass("hideable")){
+            // $hideable.addClass("fade-away");
+        }
+    }
 
+    function nubDetransition(){
+        if($nav_btn_nubs.hasClass("hideable")){
+            // $hideable.removeClass("fade-away");
+        }
+    }
 
     // closes the navigation section when the man page content is clicked
     $pseudo_body.on('click', function(){
         if($desktop_nav.hasClass('navigation-closed') == false){
-            $nav_btn.removeClass('nav-btn-d-transition');
+            nubDetransition();
             pseudoBodyOrigin();
         }
     })
@@ -78,13 +91,11 @@ $(document).ready(function(){
     $nav_btn.on('click', function(){
         if($desktop_nav.hasClass('navigation-closed')){
             $desktop_nav.removeClass('navigation-closed');
-            $nav_btn.addClass('nav-btn-d-transition');
-            // $nav_btn.addClass('nav-btn-rotate');
+            nubTransition();
             TweenMax.to($pseudo_body, 0.2, {x: ($window_width * 0.23)});
         }
         else{
-            $nav_btn.removeClass('nav-btn-d-transition');
-            // $nav_btn.removeClass('nav-btn-rotate');
+            nubDetransition();
             pseudoBodyOrigin();
         }
     });
@@ -104,11 +115,11 @@ $(document).ready(function(){
     $nav_btn_m.on('click', function(){
         if($mobile_nav.hasClass('no-display')){
             $mobile_nav.removeClass('no-display');
-            $nav_btn_m_icon.addClass('nav-btn-m-transition');
+            // $nav_btn_m_icon.addClass('nav-btn-m-transition');
             TweenMax.from($mobile_nav, 0.2,{opacity: 0, scale: 0.9});
         }
         else{
-            $nav_btn_m_icon.removeClass('nav-btn-m-transition');
+            // $nav_btn_m_icon.removeClass('nav-btn-m-transition');
             TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
         }
     });

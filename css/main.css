@@ -115,14 +115,9 @@ h1{
     overflow: hidden;
 }
 
-/* .nav-btn-d i{
-    font-size: 2.1em;
-    transition: all 0s linear;
+.nav-btn-d:hover{
+    box-shadow: 0 18px 23px rgba(0,0,0, 0.2);
 }
-
-.nav-btn-d:hover i{
-    transform: scale(1.2);
-} */
 
 .nav-btn-icon-container{
     display: flex;

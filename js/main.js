@@ -41,13 +41,13 @@ $(document).ready(function(){
     
     function nubTransition(){
         if($nav_btn_nubs.hasClass("hideable")){
-            // $hideable.addClass("fade-away");
+            $nav_btn_nubs.addClass("transform-nub");
         }
     }
 
     function nubDetransition(){
         if($nav_btn_nubs.hasClass("hideable")){
-            // $hideable.removeClass("fade-away");
+            $nav_btn_nubs.removeClass("transform-nub");
         }
     }
 

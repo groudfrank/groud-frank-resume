@@ -5,7 +5,8 @@ $(document).ready(function(){
     $desktop_nav = $('#desktop-nav');
     $nav_bar_content = $('.navbar-content');
     $nav_btn_m = $('.nav-btn-m');
-    // $nav_btn_m_icon = $('.nav-btn-m i');
+    $nub_row_1 = $('#nub-row-1');
+    $nub_row_3 = $('#nub-row-3');
     $nav_btn_nubs = $('.nav-btn-nubs');
     $hideable =$('.hideable');
     $mobile_nav = $('#mobile-nav');
@@ -35,19 +36,22 @@ $(document).ready(function(){
     // closes the navigation bar and removes transition styling for 
     // the navigation button(DESKTOP).
     function closeNavMobile(){
-        // $nav_btn_m_icon.removeClass('nav-btn-m-transition');
         TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
     }
     
     function nubTransition(){
         if($nav_btn_nubs.hasClass("hideable")){
             $nav_btn_nubs.addClass("transform-nub");
+            $nub_row_1.addClass("shift-nubs-left");
+            $nub_row_3.addClass("shift-nubs-right");
         }
     }
 
     function nubDetransition(){
         if($nav_btn_nubs.hasClass("hideable")){
             $nav_btn_nubs.removeClass("transform-nub");
+            $nub_row_1.removeClass("shift-nubs-left");
+            $nub_row_3.removeClass("shift-nubs-right");
         }
     }
 

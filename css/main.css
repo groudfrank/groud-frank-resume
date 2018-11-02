@@ -1305,15 +1305,15 @@ b{
 
 .transform-nub{
     background: #666;
-    /* border-radius: 2px; */
+    border-radius: 2px;
 }
 
 .shift-nubs-left{
-    margin-left: 10px;
+    margin-left: 13px;
 }
 
 .shift-nubs-right{
-    margin-right: 10px;
+    margin-right: 13px;
 }
 
 /*----------Media Queries----------*/

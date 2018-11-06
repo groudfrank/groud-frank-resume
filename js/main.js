@@ -96,7 +96,7 @@ $(document).ready(function(){
         if($desktop_nav.hasClass('navigation-closed')){
             $desktop_nav.removeClass('navigation-closed');
             nubTransition();
-            TweenMax.to($pseudo_body, 3, {ease: Elastic.easeOut.config(1, 0.3), x: ($window_width * 0.23)});
+            TweenMax.to($pseudo_body, 2.4, {ease: Elastic.easeOut.config(1, 0.3), x: ($window_width * 0.23)});
         }
         else{
             nubDetransition();

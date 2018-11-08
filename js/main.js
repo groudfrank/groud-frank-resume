@@ -119,11 +119,9 @@ $(document).ready(function(){
     $nav_btn_m.on('click', function(){
         if($mobile_nav.hasClass('no-display')){
             $mobile_nav.removeClass('no-display');
-            // $nav_btn_m_icon.addClass('nav-btn-m-transition');
             TweenMax.from($mobile_nav, 0.2,{opacity: 0, scale: 0.9});
         }
         else{
-            // $nav_btn_m_icon.removeClass('nav-btn-m-transition');
             TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
         }
     });

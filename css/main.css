@@ -471,7 +471,7 @@ h1{
     align-items: center;
     width: 15em;
     margin: 1em;
-    padding: 0.6em 0.6em 1.7em 0.6em;
+    padding: 1em 0.6em 1.7em 0.6em;
     margin-bottom: 3em;
     box-shadow: 0 38px 43px rgba(0,0,0,.09);
     border: 0.0625em solid #C1C8E4;
@@ -546,7 +546,7 @@ h1{
 .skill-block{
     display: flex;
     align-items: center;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.03s ease-in-out;
 }
 
 .skill-block:hover{

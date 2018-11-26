@@ -231,7 +231,8 @@ h1{
     width: 3.6em;
     height: 3.6em;
     background-color: #fff;
-    box-shadow: 0 38px 43px rgba(0,0,0,.09);
+    /* box-shadow: 0 38px 43px rgba(0,0,0,.09); */
+    box-shadow: 0 3px 20px 13px rgba(0,0,0,.1);
     border-radius: 0.2em;
     margin: 1em 0em 0em 1em;
     position: fixed;
@@ -348,6 +349,41 @@ h1{
     height: 100%;
     background: linear-gradient(94deg, #5AB9EA,  #8860D0);
     box-shadow: -38px 0 43px rgba(0,0,0,0.14);
+}
+
+#pseudo-body #last-updated-tag-d{
+    font-size: 0.7em;
+    color: #fff;
+    /* margin: 3em 0.5em 6em 0em; */
+    position: absolute;
+    top: 3.2em;
+    left: 8em;
+}
+
+#pseudo-body #last-updated-tag-d .update-label {
+    opacity: 0.5;
+}
+
+#pseudo-body #last-updated-tag-d .update-date {
+    font-weight: bold;
+}
+
+#last-updated-tag-m{
+    font-size: 0.7em;
+    color: #fff;
+    /* margin: 3em 0.5em 6em 0em; */
+    position: absolute;
+    bottom: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#last-updated-tag-m .update-label {
+    opacity: 0.5;
+}
+
+#pseudo-body #last-updated-tag-m .update-date {
+    font-weight: bold;
 }
 
 
@@ -1501,6 +1537,12 @@ and (orientation: portrait){
             }
         }
 
+
+@media (max-device-width: 1100px){
+    #pseudo-body #last-updated-tag-d{
+        display: none;
+            }
+        }
 
 @media (max-width: 1100px){
     #pg-content {

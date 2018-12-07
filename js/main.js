@@ -42,16 +42,12 @@ $(document).ready(function(){
     function nubTransition(){
         if($nav_btn_nubs.hasClass("hideable")){
             $nav_btn_nubs.addClass("transform-nub");
-            // $nub_row_1.addClass("shift-nubs-left");
-            // $nub_row_3.addClass("shift-nubs-right");
         }
     }
 
     function nubDetransition(){
         if($nav_btn_nubs.hasClass("hideable")){
             $nav_btn_nubs.removeClass("transform-nub");
-            // $nub_row_1.removeClass("shift-nubs-left");
-            // $nub_row_3.removeClass("shift-nubs-right");
         }
     }
 

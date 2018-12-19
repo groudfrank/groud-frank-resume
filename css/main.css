@@ -925,6 +925,7 @@ h1{
 
 .pg-btn:hover{
     width: 12em;
+    cursor: pointer;
 }
 
 .pg-btn a{
@@ -1237,7 +1238,7 @@ h1{
 }
 
 .subsection-divider{
-    width: 90%;
+    width: 70%;
     height: 1px;
     margin-top: 9em;
     margin-bottom: 6em;

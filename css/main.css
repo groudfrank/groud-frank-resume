@@ -598,6 +598,11 @@ h1{
     left: 0;
 }
 
+.skill-building-alt{
+    font-size: 0.85rem;
+    color: #526173;
+}
+
 .skill{
     margin-right: auto;
 }

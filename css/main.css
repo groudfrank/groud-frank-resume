@@ -652,7 +652,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-height: 2000px; /*Can only transition max-height*/
+    max-height: 10000px; /*Can only transition max-height*/
     margin-top: 2em;
     transition: all 0.8s ease-in-out;
     overflow: hidden;

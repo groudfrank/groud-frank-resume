@@ -14,8 +14,8 @@ $(document).ready(function(){
     $window_width = $(window).width();
     $work_history_btn = $('#work-history-btn');
     $work_history_btn_txt = $('#work-history-btn p');
-    $work_history_container = $('.work-history-container');
-    $fading_divider = $('.fading-divider');
+    // $resizable_container = $('.resizable-container');
+    // $fading_divider = $('.fading-divider');
 
 
     // Ensures the pseudo body is displaced to the right width when
@@ -123,16 +123,34 @@ $(document).ready(function(){
     });
 
 // Display/hide work histroy botton
-    $work_history_btn.on('click', function(){
-        if($work_history_container.hasClass('close-content')){
+    // $work_history_btn.on('click', function(){
+    //     if($resizable_container.hasClass('close-content')){
+    //         $fading_divider.removeClass('close-divider');
+    //         $resizable_container.removeClass('close-content');
+    //         $work_history_btn_txt.text('Hide work history');
+    //     }
+    //     else{
+    //         $fading_divider.addClass('close-divider');
+    //         $resizable_container.addClass('close-content');
+    //         $work_history_btn_txt.text('Show work history');
+    //     }
+    // })
+
+    $('.pg-btn').on('click', function(){
+        // Targets the .resizable-container class
+        $resizable_container = $(this).siblings('.resizable-container');
+        // Targets the fading-divider class
+        $fading_divider = $(this).siblings('.fading-divider');
+
+        if($resizable_container.hasClass('close-content')){
             $fading_divider.removeClass('close-divider');
-            $work_history_container.removeClass('close-content');
-            $work_history_btn_txt.text('Hide work history');
+            $resizable_container.removeClass('close-content');
+            $work_history_btn_txt.text('Hide content');
         }
         else{
             $fading_divider.addClass('close-divider');
-            $work_history_container.addClass('close-content');
-            $work_history_btn_txt.text('Show work history');
+            $resizable_container.addClass('close-content');
+            $work_history_btn_txt.text('Show content');
         }
     })
 

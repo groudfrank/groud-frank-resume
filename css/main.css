@@ -622,7 +622,6 @@ h1{
     font-size: 0.8rem;
 }
 
-
 #code .skill-block:hover{
     color: #5AB9EA
 }
@@ -647,7 +646,7 @@ h1{
     color: #FF8DFF;
 }
 
-.work-history-container{
+.resizable-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -677,10 +676,6 @@ h1{
 .work-history-block p, h3{
     margin-top: 0.37em;
     margin-bottom: 0.37em;
-}
-
-#work-history-btn{
-    margin: 0em;
 }
 
 .work-period{
@@ -930,8 +925,8 @@ h1{
     width: 11em;
     height: 3em;
     background: linear-gradient(93deg, #5AB9EA, #8860D0);
+    margin-top: 2em;
     border-radius: 4em;
-    margin-top: 5em;
     transition: all 0.1s ease-in-out;
     position: relative;
     box-shadow: 0 2px 25px 2px rgba(86,128,233, 0.5);
@@ -956,6 +951,10 @@ h1{
     margin: 0em;
     font-weight: 400;
     color: #fff;
+}
+
+#all-projects-btn{
+    margin-top: 5em;
 }
 
 #contact{
@@ -1246,8 +1245,12 @@ h1{
     bottom: -0.1875rem;
 }
 
-.extra-top-margin{
+.extra-top-margin-5{
     margin-top: 5em
+}
+
+.extra-bottom-margin-4{
+    margin-bottom: 4em;
 }
 
 .section-divider{

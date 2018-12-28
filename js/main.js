@@ -5,17 +5,11 @@ $(document).ready(function(){
     $desktop_nav = $('#desktop-nav');
     $nav_bar_content = $('.navbar-content');
     $nav_btn_m = $('.nav-btn-m');
-    $nub_row_1 = $('#nub-row-1');
-    $nub_row_3 = $('#nub-row-3');
     $nav_btn_nubs = $('.nav-btn-nubs');
     $hideable =$('.hideable');
     $mobile_nav = $('#mobile-nav');
     $window = $(window);
     $window_width = $(window).width();
-    $work_history_btn = $('#work-history-btn');
-    $work_history_btn_txt = $('#work-history-btn p');
-    // $resizable_container = $('.resizable-container');
-    // $fading_divider = $('.fading-divider');
 
 
     // Ensures the pseudo body is displaced to the right width when
@@ -34,17 +28,19 @@ $(document).ready(function(){
     };
 
     // closes the navigation bar and removes transition styling for 
-    // the navigation button(DESKTOP).
+    // the navigation button(MOBILE).
     function closeNavMobile(){
         TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
     }
     
+    // CSS transitions the nubs on the navigation button.
     function nubTransition(){
         if($nav_btn_nubs.hasClass("hideable")){
             $nav_btn_nubs.addClass("transform-nub");
         }
     }
 
+    // Returns nub on the navigation button to their original state
     function nubDetransition(){
         if($nav_btn_nubs.hasClass("hideable")){
             $nav_btn_nubs.removeClass("transform-nub");
@@ -122,35 +118,24 @@ $(document).ready(function(){
         }
     });
 
-// Display/hide work histroy botton
-    // $work_history_btn.on('click', function(){
-    //     if($resizable_container.hasClass('close-content')){
-    //         $fading_divider.removeClass('close-divider');
-    //         $resizable_container.removeClass('close-content');
-    //         $work_history_btn_txt.text('Hide work history');
-    //     }
-    //     else{
-    //         $fading_divider.addClass('close-divider');
-    //         $resizable_container.addClass('close-content');
-    //         $work_history_btn_txt.text('Show work history');
-    //     }
-    // })
-
     $('.pg-btn').on('click', function(){
-        // Targets the .resizable-container class
-        $resizable_container = $(this).siblings('.resizable-container');
-        // Targets the fading-divider class
-        $fading_divider = $(this).siblings('.fading-divider');
+        $current_pg_btn = $(this);
 
+        // Targets the .resizable-container class
+        $resizable_container = $current_pg_btn.siblings('.resizable-container');
+        // Targets the fading-divider class
+        $fading_divider = $current_pg_btn.siblings('.fading-divider');
+
+        // Opens and closes hiden content as necessary
         if($resizable_container.hasClass('close-content')){
             $fading_divider.removeClass('close-divider');
             $resizable_container.removeClass('close-content');
-            $work_history_btn_txt.text('Hide content');
+            $current_pg_btn.text('Hide content');
         }
         else{
             $fading_divider.addClass('close-divider');
             $resizable_container.addClass('close-content');
-            $work_history_btn_txt.text('Show content');
+            $current_pg_btn.text('Show content');
         }
     })
 

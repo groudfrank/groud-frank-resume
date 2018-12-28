@@ -339,7 +339,8 @@ h1{
 
 .fading-divider{
     width: 55%;
-    height: 2px;
+    height: 3px;
+    boarder-radius: 1px;
     margin: 1.5em 0em 0em 0em;
     transition: all 0.3s ease-in-out;
 }
@@ -1075,6 +1076,10 @@ h1{
 
 .grayish{
     background-color: #C1C8E4;
+}
+
+.little-grayer{
+    background-color: #526173;
 }
 
 .straight-purple{

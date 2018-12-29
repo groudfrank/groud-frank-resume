@@ -1180,6 +1180,12 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 
+.highlighted{
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
 .sky-blue-border-thick{
     border: 0.425em solid #5AB9EA;
 }
@@ -1291,8 +1297,8 @@ h1{
 }
 
 .standard-p a{
-    color: #5680E9;
-    text-decoration: underline;
+    color: #333;
+    /* text-decoration: underline; */
 }
 
 .target-word{

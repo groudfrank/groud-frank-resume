@@ -339,7 +339,7 @@ h1{
 
 .fading-divider{
     width: 55%;
-    height: 3px;
+    height: 0.1rem;
     border-radius: 1px;
     margin: 1.5em 0em 0em 0em;
     transition: all 0.3s ease-in-out;
@@ -1055,6 +1055,10 @@ h1{
     position: relative;
 }
 
+#footer .attribution a{
+    color: #fff;
+}
+
 /*----------COLOURS----------*/
 ::selection{
     color: #fff;
@@ -1181,9 +1185,29 @@ h1{
 }
 
 .highlighted{
-    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+    font-weight: 100;
+    background-color: #fff;
     padding-left: 7px;
-    padding-right: 7px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    padding-top: 2px;
+    box-shadow: 0.125em 0.3em 2em rgba(0, 0, 0, 0.2);
+    transition: 0.2s all ease-in;
+}
+
+.highlighted:hover{
+    color: #8860D0;
+   box-shadow: 0.125em 0.2em 1em rgba(0, 0, 0, 0.3);
+}
+
+.highlighted i{
+    font-size: 0.8rem;
+    transition: inherit;
+}
+
+.highlighted:hover i{
+    color: #8860D0;
+    transform: rotate(-30deg);
 }
 
 .sky-blue-border-thick{
@@ -1297,7 +1321,7 @@ h1{
 }
 
 .standard-p a{
-    color: #333;
+    color: #526173;
     /* text-decoration: underline; */
 }
 

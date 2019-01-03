@@ -111,10 +111,10 @@ $(document).ready(function(){
     $nav_btn_m.on('click', function(){
         if($mobile_nav.hasClass('no-display')){
             $mobile_nav.removeClass('no-display');
-            TweenMax.from($mobile_nav, 0.2,{opacity: 0, scale: 0.9});
+            TweenMax.from($mobile_nav, 0.05,{opacity: 0, scale: 0.9});
         }
         else{
-            TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
+            TweenMax.to($mobile_nav, 0.05,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
         }
     });
 

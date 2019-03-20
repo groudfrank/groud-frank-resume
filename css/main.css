@@ -878,7 +878,7 @@ h1{
     box-shadow: 0 38px 43px rgba(0,0,0, 0.09);
     position: relative;
     overflow: hidden;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.16s ease-in-out;
 }
 
 .projects-card:hover{
@@ -900,6 +900,7 @@ h1{
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 1;
 }
 
 .projects-card:hover .projects-card-img{
@@ -914,6 +915,8 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    transition: all 0.16s ease-in-out;
+
 }
 
 .projects-card-description{

@@ -69,7 +69,7 @@ b{
 }
 
 p{
-  font-size: 0.94rem; 
+  font-size: 0.93rem; 
   font-weight: 400;
   line-height: 1.3;
 }
@@ -455,7 +455,7 @@ h1{
 
 .about-card{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     width: 13.625em;
@@ -463,7 +463,7 @@ h1{
     box-shadow: 0 38px 43px rgba(0,0,0,.09);
     position: relative;
     border: 0.0625em solid var(--grayish);
-    border-bottom: 0em;
+    border-top: 0em;
     margin-left: 2em;
     margin-bottom: 3em;
     transition: transform 0.2s ease-in-out;

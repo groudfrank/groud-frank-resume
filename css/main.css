@@ -959,7 +959,9 @@ h1{
 
 
 .pg-btn:hover{
-    width: 12em;
+    /* width: 12em; */
+    transform: scale(1.05);
+    box-shadow: 0 2px 25px 2px rgba(86,128,233, 0.9);
     cursor: pointer;
 }
 

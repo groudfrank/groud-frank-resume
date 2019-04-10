@@ -431,7 +431,7 @@ h1{
     flex-direction: column;
     align-items: center;
     background-color: var(--just-white);
-    padding: 6em 3em 6em 3em;
+    padding: 8em 3em 6em 3em;
     border-radius: 0.3em;
     box-shadow: 0 38px 147px rgba(0,0,0,.2);
     position: relative;
@@ -1674,8 +1674,8 @@ and (orientation: portrait){
         }
 
 @media (max-device-width: 1100px){
-    .main-section {
-        padding: 6em 1em 6em 1em;
+    .main-section{
+        padding: 8em 1em 6em 1em;
             }
         }
 

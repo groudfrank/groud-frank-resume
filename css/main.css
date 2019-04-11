@@ -303,8 +303,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12.5em;
-    height: 12.5em;
+    width: 13.5em;
+    height: 13.5em;
     border: 0.3125em solid var(--just-white);
     background-color: var(--just-white);
     border-radius: 50%;

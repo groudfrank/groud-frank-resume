@@ -964,7 +964,7 @@ h1{
     border-radius: 4.2em;
     transition: all 0.1s ease-in-out;
     position: relative;
-    box-shadow: --var(--small-elements-shadow);
+    box-shadow: var(--small-elements-shadow);
 }
 
 

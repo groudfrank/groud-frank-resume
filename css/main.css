@@ -966,7 +966,7 @@ h1{
     width: 11em;
     height: 3em;
     background: linear-gradient(93deg, var(--sky-blue), var(--straight-purple));
-    margin-top: 2em;
+    /* margin-top: 2em; */
     border-radius: 4.2em;
     transition: all 0.1s ease-in-out;
     position: relative;

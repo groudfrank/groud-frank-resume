@@ -130,12 +130,12 @@ $(document).ready(function(){
         if($resizable_container.hasClass('close-content')){
             $fading_divider.removeClass('close-divider');
             $resizable_container.removeClass('close-content');
-            $current_pg_btn.text('Hide content');
+            $current_pg_btn.find('p').text('Hide content');
         }
         else{
             $fading_divider.addClass('close-divider');
             $resizable_container.addClass('close-content');
-            $current_pg_btn.text('Show content');
+            $current_pg_btn.find('p').text('Show content');
         }
     })
 

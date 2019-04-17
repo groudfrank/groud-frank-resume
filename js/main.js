@@ -1,22 +1,22 @@
 $(document).ready(function(){
 
-    $pseudo_body = $('#pseudo-body');
-    $nav_btn = $('.nav-btn-d');
-    $desktop_nav = $('#desktop-nav');
-    $nav_bar_content = $('.navbar-content');
-    $nav_btn_m = $('.nav-btn-m');
-    $nav_btn_nubs = $('.nav-btn-nubs');
+    $pseudoBody = $('#pseudo-body');
+    $navBtn = $('.nav-btn-d');
+    $desktopNav = $('#desktop-nav');
+    $navBarContent = $('.navbar-content');
+    $navBtnMobile = $('.nav-btn-m');
+    $navBtnNubs = $('.nav-btn-nubs');
     $hideable =$('.hideable');
-    $mobile_nav = $('#mobile-nav');
+    $mobileNav = $('#mobile-nav');
     $window = $(window);
-    $window_width = $(window).width();
+    $windowWidth = $(window).width();
 
 
     // Ensures the pseudo body is displaced to the right width when
     // the size of the browser is changed. This ensures that the 
     // navigation bar hidden beneath is properly exposed.
     $window.on('resize', function(){
-        $window_width = $window.width();
+        $windowWidth = $window.width();
     });
 
     // closes the navigation bar and removes transition styling for 
@@ -30,26 +30,26 @@ $(document).ready(function(){
     // closes the navigation bar and removes transition styling for 
     // the navigation button(MOBILE).
     function closeNavMobile(){
-        TweenMax.to($mobile_nav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
+        TweenMax.to($mobileNav, 0.2,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
     }
     
     // CSS transitions the nubs on the navigation button.
     function nubTransition(){
-        if($nav_btn_nubs.hasClass("hideable")){
-            $nav_btn_nubs.addClass("transform-nub");
+        if($navBtnNubs.hasClass("hideable")){
+            $navBtnNubs.addClass("transform-nub");
         }
     }
 
     // Returns nub on the navigation button to their original state
     function nubDetransition(){
-        if($nav_btn_nubs.hasClass("hideable")){
-            $nav_btn_nubs.removeClass("transform-nub");
+        if($navBtnNubs.hasClass("hideable")){
+            $navBtnNubs.removeClass("transform-nub");
         }
     }
 
     // closes the navigation section when the man page content is clicked
-    $pseudo_body.on('click', function(){
-        if($desktop_nav.hasClass('navigation-closed') == false){
+    $pseudoBody.on('click', function(){
+        if($desktopNav.hasClass('navigation-closed') == false){
             nubDetransition();
             pseudoBodyOrigin();
         }
@@ -77,18 +77,18 @@ $(document).ready(function(){
 
     // Returns navbar to original position
     var pseudoBodyOrigin = function(){
-        $desktop_nav.addClass('navigation-closed');
-        TweenMax.to($pseudo_body, 0.2, {x: 0});
+        $desktopNav.addClass('navigation-closed');
+        TweenMax.to($pseudoBody, 0.2, {x: 0});
     }
 
     // On navigation button click(if class is hidden move the )
     // navigation bar into view and change the color of the navigation bar
     // icon.
-    $nav_btn.on('click', function(){
-        if($desktop_nav.hasClass('navigation-closed')){
-            $desktop_nav.removeClass('navigation-closed');
+    $navBtn.on('click', function(){
+        if($desktopNav.hasClass('navigation-closed')){
+            $desktopNav.removeClass('navigation-closed');
             nubTransition();
-            TweenMax.to($pseudo_body, 2.4, {ease: Elastic.easeOut.config(1, 0.3), x: ($window_width * 0.23)});
+            TweenMax.to($pseudoBody, 2.4, {ease: Elastic.easeOut.config(1, 0.3), x: ($windowWidth * 0.23)});
         }
         else{
             nubDetransition();
@@ -96,46 +96,43 @@ $(document).ready(function(){
         }
     });
 
-    function noDisplay(){
-        $mobile_nav.addClass('no-display');
-    }
-
      // Returns navbar to original position
      var navbarOriginMobile = function(){
-        $mobile_nav.addClass('no-display');
-        TweenMax.to($mobile_nav, 0, {opacity: 1, scale: 1});
+        $mobileNav.addClass('no-display');
+        TweenMax.to($mobileNav, 0, {opacity: 1, scale: 1});
     }
 
 
     // Mobile navigation bar transition.
-    $nav_btn_m.on('click', function(){
-        if($mobile_nav.hasClass('no-display')){
-            $mobile_nav.removeClass('no-display');
-            TweenMax.from($mobile_nav, 0.05,{opacity: 0, scale: 0.9});
+    $navBtnMobile.on('click', function(){
+        if($mobileNav.hasClass('no-display')){
+            $mobileNav.removeClass('no-display');
+            TweenMax.from($mobileNav, 0.05,{opacity: 0, scale: 0.9});
         }
         else{
-            TweenMax.to($mobile_nav, 0.05,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
+            TweenMax.to($mobileNav, 0.05,{opacity: 0, scale: 0.9, onComplete:navbarOriginMobile});
         }
     });
 
+    // Page button code that toggles hidden content
     $('.pg-btn').on('click', function(){
-        $current_pg_btn = $(this);
+        $currentPageBtn = $(this);
 
         // Targets the .resizable-container class
-        $resizable_container = $current_pg_btn.siblings('.resizable-container');
+        $resizableContainer = $currentPageBtn.siblings('.resizable-container');
         // Targets the fading-divider class
-        $fading_divider = $current_pg_btn.siblings('.fading-divider');
+        $fadingDivider = $currentPageBtn.siblings('.fading-divider');
 
         // Opens and closes hiden content as necessary
-        if($resizable_container.hasClass('close-content')){
-            $fading_divider.removeClass('close-divider');
-            $resizable_container.removeClass('close-content');
-            $current_pg_btn.find('p').text('Hide content');
+        if($resizableContainer.hasClass('close-content')){
+            $fadingDivider.removeClass('close-divider');
+            $resizableContainer.removeClass('close-content');
+            $currentPageBtn.find('p').text('Hide content');
         }
         else{
-            $fading_divider.addClass('close-divider');
-            $resizable_container.addClass('close-content');
-            $current_pg_btn.find('p').text('Show content');
+            $fadingDivider.addClass('close-divider');
+            $resizableContainer.addClass('close-content');
+            $currentPageBtn.find('p').text('Show content');
         }
     })
 

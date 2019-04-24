@@ -112,7 +112,7 @@ h1{
     align-items: center;
     width: 3.6em;
     height: 3.6em;
-    background-color: var(--just-white);
+    background-color: rgba(255,255,255,1);
     box-shadow: var(--card-shadow);
     border-radius: 0.2em;
     margin: 1em 0em 0em 1em;
@@ -248,8 +248,7 @@ h1{
     align-items: center;
     width: 3.6em;
     height: 3.6em;
-    background-color: var(--just-white);
-    /* box-shadow: var(--card-shadow); */
+    background-color: rgba(255,255,255,0.88);
     box-shadow: 0 3px 20px 13px rgba(0,0,0,.1);
     border-radius: 0.2em;
     margin: 1em 0em 0em 1em;
@@ -257,8 +256,6 @@ h1{
     left: 0;
     top: 0;
     z-index: 6;
-    /* background-color: rgba(82,97,115, 0.9); */
-    background-color: var(--just-white);
     transition: all 0.2s linear;
 }
 
@@ -445,7 +442,7 @@ h1{
     align-items: center;
     width: 100%;
     position: relative;
-    z-index: 10;
+    z-index: 4;
 }
 
 .subsection h1{

@@ -445,6 +445,7 @@ h1{
     align-items: center;
     width: 100%;
     position: relative;
+    z-index: 10;
 }
 
 .subsection h1{
@@ -958,41 +959,59 @@ h1{
     font-weight: 300;
 }
 
-.pg-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9em;
-    color: var(--just-white);
-    background: rgba(255, 255, 255, 0.5);
-    width: 10rem;
-    height: 2.8rem;
-    border: 5px solid rgba(255,255,255, 0.9);
-    border-radius: 4.2em;
-    transition: all 0.19s ease-in-out;
-    position: relative;
-    box-shadow: 2px 2px 14px 5px rgba(136,96,208, 0.19);
+button:focus{
+    outline: 0;
 }
+
+.pg-btn{
+    font-size: 0.87rem;
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    width: 11.1rem;
+    height: 3.5rem;
+    background-image: linear-gradient(93deg, #5AB9EA, #8860D0);
+    background-clip: padding-box;
+    background-size: 100%;
+    border: 6px solid rgba(255,255,255, 0.8);
+    border-radius: 4em;
+    position: relative;
+}
+
+.pg-btn::before{
+    content: "";
+    width: 100%;
+    height: 125%;
+    position: absolute;
+    z-index: -1;
+    top: -3px;
+    left: -3px;
+    border-radius: 4em;
+    filter: blur(6px);
+    background-image: linear-gradient(93deg, #5AB9EA, transparent);
+  }
+
+  .pg-btn::after{
+    content: "";
+    width: 100%;
+    height: 125%;
+    position: absolute;
+    z-index: -1;
+    top: -3px; 
+    left: 3px;
+    border-radius: 4em;
+    filter: blur(5px);
+    background-image: linear-gradient(93deg, transparent, #8860D0);
+  }
 
 
 .pg-btn:hover{
-    transform: translateY(-7px);
-    box-shadow: 0px 15px 20px rgba(136,96,208, 0.25);
     cursor: pointer;
-}
+} 
 
-.pg-btn .pg-btn-inner-layer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 99%;
-    height: 99%;
-    background: linear-gradient(93deg, var(--sky-blue),
-    var(--straight-purple));
-    border-radius: inherit;
-}
 
-.pg-btn .pg-btn-inner-layer a{
+
+.pg-btn a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1002,14 +1021,6 @@ h1{
     border-radius: inherit;
 }
 
-.pg-btn .pg-btn-inner-layer p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--just-white);
-    font-weight: 400;
-    margin: 0em;
-}
 
 #all-projects-btn{
     margin-top: 5em;

@@ -120,8 +120,8 @@ $(document).ready(function(){
 
         // Targets the .resizable-container class
         $resizableContainer = $currentPageBtn.siblings('.resizable-container');
-        // Targets the fading-divider class
-        $fadingDivider = $currentPageBtn.siblings('.fading-divider');
+        // Targets the special-seperator class
+        $fadingDivider = $currentPageBtn.siblings('.special-seperator');
 
         // Opens and closes hiden content as necessary
         if($resizableContainer.hasClass('close-content')){

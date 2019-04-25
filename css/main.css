@@ -355,7 +355,7 @@ h1{
 
 .special-seperator{
     width: 65%; 
-    height: 2px; 
+    height: 0.125rem; 
     /* background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); */
     background-image: linear-gradient(to right, rgba(90,185,234, 0.8), 
     rgba(255,141,255, 0.8),rgba(136,96,208,0.8));
@@ -628,7 +628,7 @@ h1{
 .skill-building{
     font-size: 0.65rem;
     color: var(--midnight-gray);
-    opacity: 0.65;
+    opacity: 0.4;
     position: absolute;
     left: 0;
 }
@@ -679,18 +679,6 @@ h1{
 
 #languages .skill-block:hover{
     color: var(--light-pink);
-}
-
-.resizable-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-height: 10000px; /*Can only transition max-height*/
-    margin-top: 2em;
-    transition: all 0.8s ease-in-out;
-    overflow: hidden;
 }
 
 .work-history-block{
@@ -989,6 +977,7 @@ button:focus{
     border-radius: 4em;
     filter: blur(0.3125rem); /*5px*/
     background-image: linear-gradient(93deg, #5AB9EA, transparent);
+    transition: all ease-in-out 0.3s;
   }
 
   .pg-btn::after{
@@ -1002,7 +991,18 @@ button:focus{
     border-radius: 4em;
     filter: blur(0.3125rem); /*5px*/
     background-image: linear-gradient(93deg, transparent, #8860D0);
+    transition: all ease-in-out 0.3s;
   }
+
+  /* pg-btn:hover::before{
+    filter: blur(10px);
+    height: 140%;
+  }
+
+  pg-btn:hover::after{
+    filter: blur(10px);
+    height: 140%;
+  } */
 
 
 .pg-btn:hover{
@@ -1441,8 +1441,27 @@ b{
     display: none !important;
 }
 
+.resizable-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 10000px; /*Can only transition max-height*/
+    margin-top: 2em;
+    /*cubic-bezier fixes the delay on the closing animation*/
+    transition: max-height 2s cubic-bezier(0, 1, 0, 1) 0s,
+                opacity 0.8s ease-in-out,
+                transform 0.8s ease-in-out; 
+    overflow: hidden;
+    opacity: 1;
+    transform: scale(1);
+}
+
 .close-content{
     max-height: 0em;
+    opacity: 0;
+    transform: scale(0.8);
 }
 
 .close-divider{

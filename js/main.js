@@ -130,8 +130,8 @@ $(document).ready(function(){
             $currentPageBtn.text('Hide content');
         }
         else{
-            $fadingDivider.addClass('close-divider');
             $resizableContainer.addClass('close-content');
+            $fadingDivider.addClass('close-divider');
             $currentPageBtn.text('Show content');
         }
     })

@@ -1450,7 +1450,7 @@ b{
     max-height: 10000px; /*Can only transition max-height*/
     margin-top: 2em;
     /*cubic-bezier fixes the delay on the closing animation*/
-    transition: max-height 2s cubic-bezier(0, 1, 0, 1) 0s,
+    transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) 0s,
                 opacity 0.8s ease-in-out,
                 transform 0.8s ease-in-out; 
     overflow: hidden;

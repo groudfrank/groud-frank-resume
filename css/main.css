@@ -964,6 +964,7 @@ button:focus{
     border: 0.375rem solid rgba(255,255,255, 0.8);
     border-radius: 4em;
     position: relative;
+    transition: all ease-in-out 0.3s;
 }
 
 .pg-btn::before{
@@ -994,18 +995,24 @@ button:focus{
     transition: all ease-in-out 0.3s;
   }
 
-  /* pg-btn:hover::before{
-    filter: blur(10px);
-    height: 140%;
+  .pg-btn:hover::before{
+    filter: blur(3px);
+    height: 130%;
+    top: -5px;
+    left: -7px;
   }
 
-  pg-btn:hover::after{
-    filter: blur(10px);
-    height: 140%;
-  } */
+  .pg-btn:hover::after{
+    filter: blur(3px);
+    height: 130%;
+    top: -5px;
+    left: 7px;
+  }
 
 
 .pg-btn:hover{
+    text-shadow: 0px 0px 5px #fff;
+    border-color: rgba(255,255,255,0.95);
     cursor: pointer;
 } 
 

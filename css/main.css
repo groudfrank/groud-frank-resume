@@ -366,6 +366,15 @@ h1{
     transition: all 0.3s ease-in-out;
 }
 
+.special-seperator::before{
+    content: "";
+    width: inherit;
+    height: inherit;
+    margin: inherit;
+    box-shadow: inherit;
+    background-color: red;
+}
+
 #pseudo-body{
     width: 100%;
     height: 100%;
@@ -1363,7 +1372,7 @@ var(--kinda-blue);
     width: 70%;
     height: 1px;
     margin-top: 7em;
-    margin-bottom: 6em;
+    margin-bottom: 4.5em;
 }
 
 .sub-divider{
@@ -1457,9 +1466,9 @@ b{
     max-height: 10000px; /*Can only transition max-height*/
     margin-top: 2em;
     /*cubic-bezier fixes the delay on the closing animation*/
-    transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) 0s,
+    transition: max-height 1s cubic-bezier(0, 1, 0, 1) 0s,
                 opacity 0.8s ease-in-out,
-                transform 0.8s ease-in-out; 
+                transform 0.6s ease-in-out; 
     overflow: hidden;
     opacity: 1;
     transform: scale(1);

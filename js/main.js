@@ -67,7 +67,7 @@ $(document).ready(function(){
         
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
-              }, 800, function(){
+              }, 900, function(){
                 window.location.hash = hash;
                 // close mdesktop navigation element after animation
                 closeNav();
@@ -133,6 +133,22 @@ $(document).ready(function(){
             $resizableContainer.addClass('close-content');
             $fadingDivider.addClass('close-divider');
             $currentPageBtn.text('Show content');
+
+            // $(".pg-btn").on('click', function(event) {
+        
+            //     if (this.hash !== "") {
+                
+            //       event.preventDefault();
+            //       var hash = this.hash;
+            
+            //       $('html, body').animate({
+            //         scrollTop: $(hash).offset().top
+            //       }, 800, function(){
+            //         window.location.hash = hash;
+            //       });
+            //     } 
+            //   });
+            
         }
     })
 

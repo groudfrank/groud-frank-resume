@@ -611,6 +611,7 @@ h1{
     border-radius: 0.2rem;
     margin-bottom: 0.4em;
     position: relative;
+    z-index: 9;
 }
 
 .skills-section{

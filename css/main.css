@@ -666,7 +666,9 @@ h1{
 
 .skill-rating{
     margin-left: auto;
-    color: #DFE0E0;
+    /* color: #DFE0E0; */
+    /* color: #A9A9A9; */
+    color: #C0C0C0;
 }
 
 .skill-rating i{

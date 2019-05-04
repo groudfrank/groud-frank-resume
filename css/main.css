@@ -21,9 +21,9 @@ html{
     --pinkish-purple: #c79cc8;
     --light-pink: #FF8DFF;
     --alpha-val: 0.2;
-    --card-shadow: 0 38px 43px rgba(0,0,0, 0.09);
-    --txt-shadow: 0 18px 20px rgba(0,0,0, 0.2);
-    --small-elements-shadow: 2px 2px 9px 0px rgba(0,0,0, 0.2);
+    --card-shadow: 0 2.375rem 2.6875rem rgba(0,0,0, 0.09); /*0 18px 20px*/
+    --txt-shadow: 0 1.125rem 1.25rem rgba(0,0,0, 0.2); /*0 18px 20px*/
+    --small-elements-shadow: 0.125rem 0.125rem 0.5625rem 0rem rgba(0,0,0, 0.2); /*2px 2px 9px 0px*/
 }
 
 body{
@@ -509,6 +509,7 @@ h1{
     color: var(--just-white);
     background-color: var(--almost-black);
     border-radius: 0em 0em 0.2em 0.2em;
+    /* border-radius: 0.3em 0.3em 0.3em 0.3em; */
 }
 
 .about-card-icon i{
@@ -637,15 +638,20 @@ h1{
 
 .skill-building{
     font-size: 0.65rem;
-    color: var(--midnight-gray);
-    opacity: 0.4;
+    /* color: var(--midnight-gray); */
+    background-image: linear-gradient(-225deg, var(--sky-blue) 0%, var(--straight-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: absolute;
     left: 0;
 }
 
 .skill-building-alt{
     font-size: 0.85rem;
-    color: var(--midnight-gray);
+    /* color: var(--midnight-gray); */
+    background-image: linear-gradient(-225deg, var(--sky-blue) 0%, var(--straight-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .skill{
@@ -1302,28 +1308,28 @@ var(--kinda-blue);
 }
 
 .sky-blue-border-thin{
-    border: 0.05rem solid var(--sky-blue);
+    border: 0.1rem solid var(--sky-blue);
 }
 
 .light-pink-border-thin{
-    border: 0.05rem solid var(--light-pink);
+    border: 0.1rem solid var(--light-pink);
 }
 
 .really-blue-border-thin{
-    border: 0.05rem solid var(--really-blue);
+    border: 0.1rem solid var(--really-blue);
 }
 
 .straight-purple-border-thin{
-    border: 0.05rem solid var(--straight-purple);
+    border: 0.1rem solid var(--straight-purple);
 }
 
 
 .meh-blue-border-thin{
-    border: 0.05rem solid var(--meh-blue);
+    border: 0.1rem solid var(--meh-blue);
 }
 
 .pinkish-blue-border-thin{
-    border: 0.05rem solid var(--umm-blue);
+    border: 0.1rem solid var(--umm-blue);
 }
 
 

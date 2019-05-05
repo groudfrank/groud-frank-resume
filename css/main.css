@@ -22,7 +22,9 @@ html{
     --light-pink: #FF8DFF;
     --alpha-val: 0.2;
     --card-shadow: 0 2.375rem 2.6875rem rgba(0,0,0, 0.09); /*0 18px 20px*/
-    --txt-shadow: 0 1.125rem 1.25rem rgba(0,0,0, 0.2); /*0 18px 20px*/
+    /* --txt-shadow: 0 1.125rem 1.25rem rgba(0,0,0, 0.2); 0 18px 20px */
+    --txt-shadow: 0 1.1rem 0.69rem rgba(0,0,0, 0.2);
+    --txt-shadow-sky-blue: 0 0.9rem 0.65rem rgba(90,185,234, 0.9);
     --small-elements-shadow: 0.125rem 0.125rem 0.5625rem 0rem rgba(0,0,0, 0.2); /*2px 2px 9px 0px*/
 }
 
@@ -608,7 +610,7 @@ h1{
     background-color: var(--just-white);
     width: 1.5em;
     height: 1.5em;
-    box-shadow: 0 0.4375rem 2.25rem rgba(0,0,0,0.08);
+    box-shadow: 0 0.9rem 1rem rgba(0,0,0,0.08);
     border-radius: 0.2rem;
     margin-bottom: 0.4em;
     position: relative;
@@ -1445,6 +1447,10 @@ b{
 
 .txt-shadow{
     text-shadow: var(--txt-shadow);
+}
+
+.txt-shadow-sky-blue{
+    text-shadow: var(--txt-shadow-sky-blue);
 }
 
 .no-bottom-margin{

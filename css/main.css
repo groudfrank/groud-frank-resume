@@ -1264,6 +1264,9 @@ var(--kinda-blue);
 
 .sky-blue-txt{
     color: var(--sky-blue);
+    /* background-image: linear-gradient(150deg, var(--sky-blue) 0%, #5aa1ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .grayish-txt{
@@ -1272,6 +1275,9 @@ var(--kinda-blue);
 
 .straight-purple-txt{
     color: var(--straight-purple);
+    /* background-image: linear-gradient(150deg, var(--straight-purple) 0%, #6b3ac3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .pinkish-purple-txt{
@@ -1284,6 +1290,9 @@ var(--kinda-blue);
 
 .light-pink-txt{
     color: var(--light-pink);
+    /* background-image: linear-gradient(150deg, var(--light-pink) 0%, #ff41ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .pinkish-blue-txt{

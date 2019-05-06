@@ -18,6 +18,7 @@ html{
     --meh-blue: #9bb2e1;
     --umm-blue: #A5A5F4;
     --straight-purple: #8860D0;
+    --mostly-pruple: #B88DEE;
     --pinkish-purple: #c79cc8;
     --light-pink: #FF8DFF;
     --alpha-val: 0.2;
@@ -520,6 +521,10 @@ h1{
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
     z-index: -1;
     border-radius: 0em 2em 0.2em 2em;
 }
@@ -529,8 +534,12 @@ h1{
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
     z-index: -2;
-    border-radius: 0em;
+    border-radius: 0em 0em 0em 0em;
 }
 
 #about-card-name::before{
@@ -1264,9 +1273,14 @@ var(--kinda-blue);
 
 .sky-blue-txt{
     color: var(--sky-blue);
-    /* background-image: linear-gradient(150deg, var(--sky-blue) 0%, #5aa1ea 100%);
+}
+
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+    .sky-blue-txt{
+    background-image: linear-gradient(150deg, var(--sky-blue) 0%, #5aa1ea 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
+    }
 }
 
 .grayish-txt{
@@ -1275,9 +1289,14 @@ var(--kinda-blue);
 
 .straight-purple-txt{
     color: var(--straight-purple);
-    /* background-image: linear-gradient(150deg, var(--straight-purple) 0%, #6b3ac3 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+}
+
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+    .straight-purple-txt{
+        background-image: linear-gradient(150deg, var(--straight-purple) 0%, #6b3ac3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .pinkish-purple-txt{
@@ -1290,9 +1309,14 @@ var(--kinda-blue);
 
 .light-pink-txt{
     color: var(--light-pink);
-    /* background-image: linear-gradient(150deg, var(--light-pink) 0%, #ff41ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+}
+
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+    .light-pink-txt{
+        background-image: linear-gradient(150deg, var(--light-pink), #ff41ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .pinkish-blue-txt{
@@ -1312,13 +1336,15 @@ var(--kinda-blue);
 }
 
 .gradient-txt{
-    background-image: linear-gradient(-225deg, var(--sky-blue) 0%, var(--straight-purple) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--mostly-pruple);
 }
 
-.sky-blue-txt-shadow{
-    text-shadow: 0 18px 20px rgba(90,185,234, var(--alpha-val));
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+    .gradient-txt{
+       background-image: linear-gradient(-225deg, var(--sky-blue) 0%, var(--straight-purple) 100%);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+    }
 }
 
 .highlighted{

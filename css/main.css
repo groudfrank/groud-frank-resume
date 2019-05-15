@@ -1092,6 +1092,10 @@ h1{
     font-weight: 400;
 }
 
+.projects-card-description h6{
+    letter-spacing: 0.0625rem;
+}
+
 .projects-card-description p{
     color: var(--almost-gray);
     font-weight: 300;

@@ -1545,7 +1545,7 @@ button:focus{
 
 .highlighted{
     font-weight: 100;
-    line-height: 1.7;
+    line-height: 1.5;
     background: linear-gradient(to right, rgba(90,185,234, 0.2), 
     rgba(255,141,255, 0.2),rgba(136,96,208,0.2));
     padding-left: 0.4em;

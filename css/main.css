@@ -633,7 +633,7 @@ h1{
     align-items: center;
     list-style: none;
     width: 70%;
-    padding: 0em;
+    padding: 0em 0em 3em 0em;
 }
 
 .subjects-bar{
